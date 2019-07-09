@@ -18,13 +18,12 @@ HOSTCC="${CC:-gcc}"
 HOSTCC="${HOSTCC#${CROSS_COMPILE}}"
 
 # Source
-_repository="kernel-msm"
-_commit="a1186768fc35f81c7f4d3d672896b2d946bb4030"
+_repository="android_kernel_motorola_ali"
+_commit="ec8d03f3eb91d0aa55181e16621aaca26e9a761c"
 _config="config-${_flavor}.${arch}"
 source="
         $pkgname-$_commit.tar.gz::https://github.com/Collinthegeek/${_repository}/archive/${_commit}.tar.gz
         $_config
-	focaltech_mmi.patch
 "
 builddir="$srcdir/${_repository}-${_commit}"
 

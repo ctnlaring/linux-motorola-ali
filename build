@@ -1,0 +1,7 @@
+#!/bin/bash
+#Build script for my exact setup. don't run this on another machine
+
+cp * ~/.local/var/pmbootstrap/cache_git/pmaports/device/linux-motorola-ali/
+rm /home/cnorwood/.local/var/pmbootstrap/log.txt
+~/.bin/pmbootstrap checksum linux-motorola-ali
+~/.bin/pmbootstrap -j1 build linux-motorola-ali
