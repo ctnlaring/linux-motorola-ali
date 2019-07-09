@@ -1,0 +1,10 @@
+--- drivers/input/touchscreen/Makefile.origional	2019-07-09 17:10:08.528204456 -0500
++++ drivers/input/touchscreen/Makefile	2019-07-09 17:10:39.442427222 -0500
+@@ -35,7 +35,6 @@
+ obj-$(CONFIG_TOUCHSCREEN_ELO)		+= elo.o
+ obj-$(CONFIG_TOUCHSCREEN_EGALAX)	+= egalax_ts.o
+ obj-$(CONFIG_TOUCHSCREEN_FT5X06)	+= ft5x06_ts.o
+-obj-$(CONFIG_TOUCHSCREEN_FOCALTECH_MMI) += focaltech_mmi/
+ obj-$(CONFIG_TOUCHSCREEN_FUJITSU)	+= fujitsu_ts.o
+ obj-$(CONFIG_TOUCHSCREEN_GEN_VKEYS)	+= gen_vkeys.o
+ obj-$(CONFIG_TOUCHSCREEN_ILI210X)	+= ili210x.o
